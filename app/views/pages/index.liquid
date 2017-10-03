@@ -8,8 +8,8 @@ published: true
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Framework7</title>
-  <link rel="stylesheet" href="/stylesheets/framework7.min.css">
-  <link rel="stylesheet" href="/stylesheets/app.css">
+  {{ 'framework7.min' | stylesheet_tag }}
+  {{ 'app' | stylesheet_tag }}
 </head>
 <body>
   <div id="app">
@@ -87,7 +87,7 @@ published: true
       <div class="page">
         <div class="navbar">
           <div class="navbar-inner">
-            <div class="title sliding">Framework7</div>
+            <div class="title sliding">Grand|Central</div>
             <div class="right">
               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
                 <i class="icon f7-icons ios-only">search_strong</i>
@@ -109,6 +109,9 @@ published: true
         <div class="page-content">
           <div class="list links-list searchbar-hide-on-search">
             <ul>
+              <li>
+                <a href="/ad/">Alwaysdata</a>
+              </li>
               <li>
                 <a href="/about/">About Framework7</a>
               </li>
@@ -306,9 +309,9 @@ published: true
       </div>
     </div>
   </div>
-  <script src="/javascripts/framework7.min.js"></script>
-  <script src="/javascripts/routes.js"></script>
-  <script src="/javascripts/app.js"></script>
+  {{ 'framework7.min' | javascript_tag }}
+  {{ 'routes' | javascript_tag }}
+  {{ 'app' | javascript_tag }}
 </body>
 </html>
 
