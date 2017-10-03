@@ -73,7 +73,7 @@
   position: relative;
 }
 .icon-f7 {
-  background: url(../img/f7-icon.png) no-repeat center;
+  background: url(/samples/f7-icon.png) no-repeat center;
   background-size: cover;
 }
 
